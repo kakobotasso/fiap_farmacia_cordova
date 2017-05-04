@@ -7,6 +7,7 @@
     <title>Farmácia MOB - Fiap</title>
     <link rel="stylesheet" href="icons/material.css">
     <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,8 +16,7 @@
         <div class="light-blue darken-4 white-text valign-wrapper">
             <h5 class="titulo">FarMob</h5>
             <div>
-                <i data-activates="submenu" data-gutter="5" data-contrainwidth="false" class="material-icons waves-effect waves-light
-waves-circle dropdown-button">more_vert</i>
+                <i data-activates="submenu" data-gutter="5" data-contrainwidth="false" class="material-icons waves-effect waves-light waves-circle dropdown-button">more_vert</i>
             </div>
             <ul class="dropdown-content" id="submenu">
                 <li><a class="black-text acao-limpar" href="">Limpar</a></li>
@@ -24,12 +24,9 @@ waves-circle dropdown-button">more_vert</i>
         </div>
 
         <ul class="tabs light-blue darken-4">
-            <li class="tab"><a href="#medicamentos" class="waves-effect waves-light
-white-text">Medicamentos</a></li>
-            <li class="tab"><a href="#perfumaria" class="waves-effect waves-light
-white-text">Perfumaria</a></li>
-            <li class="tab"><a href="#higiene" class="waves-effect waves-light
-white-text">Higiene Pessoal</a></li>
+            <li class="tab"><a href="#medicamentos" class="waves-effect waves-light white-text">Medicamentos</a></li>
+            <li class="tab"><a href="#perfumaria" class="waves-effect waves-light white-text">Perfumaria</a></li>
+            <li class="tab"><a href="#higiene" class="waves-effect waves-light white-text">Higiene Pessoal</a></li>
         </ul>
     </div>
 
@@ -78,8 +75,37 @@ white-text">Higiene Pessoal</a></li>
         </div>
     </div>
 
+    <div class="fixed-action-btn">
+        <a href="#confirmacao" class="btn-floating btn-large waves-effect waves-light blue modal-trigger">
+            <i class="material-icons">done</i>
+        </a>
+    </div>
+
+    <div class="modal modal-fixed-footer" id="confirmacao">
+        <div class="modal-content">
+            <h5>Resumo dos itens selecionados</h5>
+            <input type="number" class="validate" placeholder="Número da venda" id="numero-vendedor">
+            <blockquote id="resumo"></blockquote>
+        </div>
+        <div class="modal-footer">
+            <button class="btn green waves-effect waves-light modal-close">
+                Concluir
+            </button>
+            <button class="acao-limpar btn-flat waves-effect waves-red modal-close">
+                Cancelar
+            </button>
+        </div>
+    </div>
+
+    <div class="fixed-action-btn">
+        <a href="#confirmacao" id="confirmar" class="btn-floating btn-large waves-effect waves-light blue modal-trigger">
+            <i class="material-icons">done</i>
+        </a>
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
