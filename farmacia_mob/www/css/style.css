@@ -9,6 +9,7 @@ body{
 .titulo{
     font-size: 1.4rem;
     margin-left:5%;
+    font-weight: bold;
     margin-right: auto;
 }
 
@@ -21,4 +22,10 @@ body{
 
 .section{
     padding-top:125px;
+}
+
+#hamburguer-menu{
+    color: #fff;
+    margin-left:5%;
+    margin-top:10px;
 }

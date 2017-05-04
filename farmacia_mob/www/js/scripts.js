@@ -28,3 +28,8 @@ $('.acao-limpar').on('click', function () {
     $('#numero-vendedor').val('');
     $('.badge').remove();
 });
+
+$('.button-collapse').sideNav({
+    draggable: true,
+    closeOnClick: true
+});
