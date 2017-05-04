@@ -1,49 +1,85 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Farmácia MOB - Fiap</title>
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+</head>
+
+<body>
+
+    <div class="topo-fixo z-depth-1">
+        <div class="light-blue darken-4 white-text valign-wrapper">
+            <h5 class="titulo">FarMob</h5>
+            <div>
+                <i data-activates="submenu" data-gutter="5" data-contrainwidth="false" class="material-icons waves-effect waves-light
+waves-circle dropdown-button">more_vert</i>
             </div>
+            <ul class="dropdown-content" id="submenu">
+                <li><a class="black-text acao-limpar" href="">Limpar</a></li>
+            </ul>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </body>
+
+        <ul class="tabs light-blue darken-4">
+            <li class="tab"><a href="#medicamentos" class="waves-effect waves-light
+white-text">Medicamentos</a></li>
+            <li class="tab"><a href="#perfumaria" class="waves-effect waves-light
+white-text">Perfumaria</a></li>
+            <li class="tab"><a href="#higiene" class="waves-effect waves-light
+white-text">Higiene Pessoal</a></li>
+        </ul>
+    </div>
+
+    <div class="section" id="medicamentos">
+        <h6 class="container">Tarja Preta</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text">Gardenal</a>
+            <a class="collection-item waves-effect black-text">Diazepam</a>
+            <a class="collection-item waves-effect black-text">Rivotril</a>
+        </div>
+        <h6 class="container">Genérico</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text">Ácido Acetilsalicílico</a>
+            <a class="collection-item waves-effect black-text">Omeprazol</a>
+            <a class="collection-item waves-effect black-text">Tadalafil</a>
+        </div>
+    </div>
+
+    <div class="section" id="perfumaria">
+        <h6 class="container">Feminino</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text">Leite de Colônia</a>
+            <a class="collection-item waves-effect black-text">Acetona Silva</a>
+            <a class="collection-item waves-effect black-text">Minâncora</a>
+        </div>
+        <h6 class="container">Masculino</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text">Desodorante Gillete</a>
+            <a class="collection-item waves-effect black-text">Gel Bozzano</a>
+            <a class="collection-item waves-effect black-text">Gillete Mach3</a>
+        </div>
+    </div>
+
+    <div class="section" id="higiene">
+        <h6 class="container">Feminino</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text">Sabonete Dove</a>
+            <a class="collection-item waves-effect black-text">Absorvente Sempre Livre</a>
+            <a class="collection-item waves-effect black-text">Gel Blowtex</a>
+        </div>
+        <h6 class="container">Masculino</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text">Preservativos Blowtex</a>
+            <a class="collection-item waves-effect black-text">Shampoo Clear</a>
+            <a class="collection-item waves-effect black-text">Sabonete Francis</a>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+</body>
+
 </html>
